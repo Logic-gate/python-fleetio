@@ -1,7 +1,7 @@
     authors = {
-        'Max Thayer': {
-            'email': 'garbados@gmail.com',
-            'twitter': '@garbados',
-            'website': 'www.maxthayer.org'
+        'Amer Almadani': {
+            'email': 'mad_dev@linuxmail.org',
+            'twitter': '@penbangproject',
+            'website': 'www.sysbase.org'
         }
     }
