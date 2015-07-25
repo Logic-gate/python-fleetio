@@ -78,4 +78,4 @@ In terminal:
 The decision for separating each call(each request method has a separate function) was made to make interactions with the API cleaner, although all functions follow the same logic and code. It could have easily been designed in such a way that accommodates arguments for each method in a singal function.
 # FleetIO API Documentation
 
-Check out FullContact's documentation [here](http://developer.fleetio.com/).
+Check out FleetIO's documentation [here](http://developer.fleetio.com/).
