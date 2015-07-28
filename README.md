@@ -25,10 +25,22 @@ In terminal:
     >>> r.json()
     [{u'trim': None, u'meter_name': u'Odometer', u'color': u'', u'fuel_type_id': 61260, u'loan_interest_rate': None, u'vin': u'', u'license_plate': u'TEST', u'group_name': 
     {u'socialProfiles': [...], u'demographics': {...}, ..., u'id': XXXXXXX,}
-    
-    >>> r = f.api_get('vehicles', 'XXXXXXX') # return vehicles ID XXXXXXX
+    >>> type(r.json())
+    list
+    >>> for i in range(len(r.json())):
+    >>>     print r.json()[i]['name'], r.json()[i]['id']
+    123456 Car-1
+    678912 Car-2
+    945678 Truck-1
+    912345 Truck-2
+    >>> r = f.api_get('vehicles', '123456') # return vehicles by ID 123456
     >>> r.json()
     {u'trim': None, u'meter_name': u'Odometer', u'color': u''.....}
+    >>> type(r.json())
+    dict
+    >>> r.json()['name']
+    Car-1
+    
 
 # Callable functions:
     api_get(self, endpoint, *identifier):  
